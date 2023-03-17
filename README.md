@@ -9,20 +9,21 @@ Além disso, foram utilizados JQuery para o front-end, que contava com um design
 
 Caso queira Executar o projeto como um todo, apenas será necessário possuir o MySql e MySql Workbench instalados, bem como o Eclipse para executá-lo em si.
 
+##
 ### Configuração no MySql:
 
 Primeiramente crie uma nova conexão no MySql Workbench e configure o nome de usuário e senha (por padrão deixe o nome como "root" e senha como "gal1l3ug@me3702").
 
 Em seguida, abra uma nova query Sql e digite o seguinte comando para criar um novo banco:
 
-create database bdpessoas;
+`create database bdpessoas;`
 
 Assim será criado um novo banco de nome "bdpessoas";
 Agora crie a tabela pelo comando:
 
-use bdpessoas;
+`use bdpessoas;`
 
-create table pessoas(
+`create table pessoas(
     id_pessoa int not null auto_increment primary key,
     nome varchar(50) not null,
     email varchar(50) not null,
@@ -35,12 +36,12 @@ create table pessoas(
     bairro varchar(255),
     cidade varchar(255),
     estado varchar(255)
-);
+);`
 
 Dessa forma, estaremos informando que usamos o banco bdpessoas e criando uma tabela "pessoas" nele.
 
 * Por padrão o MySql faz conexões em localhost:3306
-
+##
 ### Configuração no Eclipse:
 
 Após a configuração do banco de dados no MySql Workbench, basta abrir o projeto no Eclipse e executá-lo normalmente.
