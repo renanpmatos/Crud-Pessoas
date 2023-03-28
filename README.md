@@ -12,7 +12,7 @@ Caso queira Executar o projeto como um todo, apenas será necessário possuir o 
 ##
 ### Configuração no MySql:
 
-Primeiramente crie uma nova conexão no MySql Workbench e configure o nome de usuário e senha (por padrão deixe o nome como "root" e senha como "gal1l3ug@me3702").
+Primeiramente crie uma nova conexão no MySql Workbench e configure o nome de usuário e senha (por padrão deixe o nome como "root").
 
 Em seguida, abra uma nova query Sql e digite o seguinte comando para criar um novo banco:
 
