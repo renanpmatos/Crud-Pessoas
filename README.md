@@ -16,12 +16,14 @@ Primeiramente crie uma nova conexão no MySql Workbench e configure o nome de us
 
 Em seguida, abra uma nova query Sql e digite o seguinte comando para criar um novo banco:
 
-`create database bdpessoas;`
+```mysql 
+create database bdpessoas;
+```
 
 Assim será criado um novo banco de nome "bdpessoas";
 Agora crie a tabela pelo comando:
 
-```sql
+```mysql
 
 use bdpessoas;
 
