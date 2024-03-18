@@ -21,9 +21,11 @@ Em seguida, abra uma nova query Sql e digite o seguinte comando para criar um no
 Assim será criado um novo banco de nome "bdpessoas";
 Agora crie a tabela pelo comando:
 
-`use bdpessoas;`
+```sql
 
-`create table pessoas(
+use bdpessoas;
+
+create table pessoas(
     id_pessoa int not null auto_increment primary key,
     nome varchar(50) not null,
     email varchar(50) not null,
@@ -36,7 +38,8 @@ Agora crie a tabela pelo comando:
     bairro varchar(255),
     cidade varchar(255),
     estado varchar(255)
-);`
+);
+```
 
 Dessa forma, estaremos informando que usamos o banco bdpessoas e criando uma tabela "pessoas" nele.
 
