@@ -1,6 +1,5 @@
 <div align="center">
   <h1 align="center">Crud Pessoas</h1>
-  <img src="https://github.com/renanpmatos/geoma/blob/main/public/using-geoma.jpg" alt="usinggeoma"/>
   <div>
     <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
   </div>
