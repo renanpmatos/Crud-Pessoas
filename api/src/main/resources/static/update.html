@@ -200,24 +200,25 @@
     </div>
   </body>
   <script>
-    // recebe um id da pagina de daods pela url
-    var myId = location.search.substring(1);
-
-    // salva os novos dados
-    var form = document.getElementById("form");
-    form.addEventListener("submit", (event) => {
-      "submit", event.preventDefault();
-      salvar(myId);
-    });
-
-    //faz uma pesquisa na pagina de dados
-    var searchForm = document.getElementById("searchForm");
-    searchForm.addEventListener("submit", (event) => {
-      "submit", event.preventDefault();
-      window.location.replace("./read.html?" + $("#inputPesquisa").val());
-    });
-
     $(document).ready(function () {
+      // recebe um id da pagina de daods pela url
+      var myId = location.search.substring(1);
+
+      // salva os novos dados
+      var form = document.getElementById("form");
+      form.addEventListener("submit", (event) => {
+        "submit", event.preventDefault();
+        testaCep();
+        salvar(myId);
+      });
+
+      //faz uma pesquisa na pagina de dados
+      var searchForm = document.getElementById("searchForm");
+      searchForm.addEventListener("submit", (event) => {
+        "submit", event.preventDefault();
+        window.location.replace("./read.html?" + $("#inputPesquisa").val());
+      });
+
       //carrega os dados de acordo com o id
       carregar(myId);
 
@@ -234,57 +235,6 @@
       //botão cancelar
       $("#btnCancel").click(function () {
         window.location.replace("./read.html");
-      });
-
-      //pesquisa do cep pela api
-      $("#inputCEP").blur(function () {
-        var cep = $(this).val().replace(/\D/g, "");
-
-        if (cep != "") {
-          var validacep = /^[0-9]{8}$/;
-
-          if (validacep.test(cep)) {
-            $("#endereco").val("...");
-            $("#logradouro").val("...");
-            $("#bairro").val("...");
-            $("#cidade").val("...");
-            $("#UF").val("...");
-
-            //fetch na api
-            $.getJSON(
-              "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
-              function (dados) {
-                if (!("erro" in dados)) {
-                  $("#logradouro").val(dados.logradouro);
-                  $("#bairro").val(dados.bairro);
-                  $("#cidade").val(dados.localidade);
-                  $("#UF").val(dados.uf);
-                } else {
-                  $("#inputCEP").val("");
-                  $("#endereco").val("");
-                  $("#logradouro").val("");
-                  $("#cidade").val("");
-                  $("#bairro").val("");
-                  $("#UF").val("");
-                }
-              }
-            );
-          } else {
-            $("#inputCEP").val("");
-            $("#endereco").val("");
-            $("#logradouro").val("");
-            $("#cidade").val("");
-            $("#bairro").val("");
-            $("#UF").val("");
-          }
-        } else {
-          $("#inputCEP").val("");
-          $("#endereco").val("");
-          $("#logradouro").val("");
-          $("#cidade").val("");
-          $("#bairro").val("");
-          $("#UF").val("");
-        }
       });
     });
   </script>

@@ -265,3 +265,55 @@ function TipoPessoaCadastro() {
       break;
   }
 }
+
+function testaCep() {
+  //pesquisa do cep pela api
+  $("#inputCEP").blur(function () {
+    var cep = $(this).val().replace(/\D/g, "");
+
+    if (cep != "") {
+      var validacep = /^[0-9]{8}$/;
+
+      if (validacep.test(cep)) {
+        $("#endereco").val("...");
+        $("#logradouro").val("...");
+        $("#bairro").val("...");
+        $("#cidade").val("...");
+        $("#UF").val("...");
+
+        $.getJSON(
+          "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
+          function (dados) {
+            if (!("erro" in dados)) {
+              $("#logradouro").val(dados.logradouro);
+              $("#bairro").val(dados.bairro);
+              $("#cidade").val(dados.localidade);
+              $("#UF").val(dados.uf);
+            } else {
+              $("#inputCEP").val("");
+              $("#endereco").val("");
+              $("#logradouro").val("");
+              $("#cidade").val("");
+              $("#bairro").val("");
+              $("#UF").val("");
+            }
+          }
+        );
+      } else {
+        $("#inputCEP").val("");
+        $("#endereco").val("");
+        $("#logradouro").val("");
+        $("#cidade").val("");
+        $("#bairro").val("");
+        $("#UF").val("");
+      }
+    } else {
+      $("#inputCEP").val("");
+      $("#endereco").val("");
+      $("#logradouro").val("");
+      $("#cidade").val("");
+      $("#bairro").val("");
+      $("#UF").val("");
+    }
+  });
+}
