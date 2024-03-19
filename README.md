@@ -1,16 +1,40 @@
-# Crud-Pessoas
+<div align="center">
+  <h1 align="center">Crud Pessoas</h1>
+  <img src="https://github.com/renanpmatos/geoma/blob/main/public/using-geoma.jpg" alt="usinggeoma"/>
+  <div>
+    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+  </div>
+  <br>
+</div>
 
-### Este é um projeto de Crud simples, com o tema de cadastro de Pessoas.
+## 📋 <a name="table">Conteúdos</a>
 
-Para o desenvolvimento do projeto foi utilizado um banco de dados MySql, que faria conexão com uma API desenvolvida em Java
-A API foi feita com o framework Spring Boot, que permite uma criação fácil e manipulação dinâmica dos dados na forma de API.
+1. 👋 [Introdução](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. ⚡ [Execução do Projeto](#quick-start)
 
-Além disso, foram utilizados JQuery para o front-end, que contava com um design feito em Bootstrap, para facilitar e agilizar o processo de criação e desenvolvimento das interfaces.
+## <a name="introduction">👋 Introdução</a>
 
-Caso queira Executar o projeto como um todo, apenas será necessário possuir o MySql e MySql Workbench instalados, bem como o Eclipse para executá-lo em si.
+Um desafio para criar uma aplicação CRUD em 1 fim de semana, usando Spring Boot pela primeira vez!
 
-##
-### Configuração no MySql:
+Para sua criação, utilizei principalmente a documentação do Spring Boot para desenvolver a API:
+
+[SpringBoot] <a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/">Documentação Spring Boot</a>
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Spring Boot
+- Html, CSS e Javascript vanilla
+- Bootstrap
+
+## <a name="quick-start">⚡ Execução do Projeto</a>
+
+**Pré-requisitos para excutar**
+
+- [Java](https://www.java.com/pt-BR/)
+
+
+**Configuração no MySql:**
 
 Primeiramente crie uma nova conexão no MySql Workbench e configure o nome de usuário e senha (por padrão deixe o nome como "root").
 
@@ -53,9 +77,4 @@ Após a configuração do banco de dados no MySql Workbench, basta abrir o proje
 
 Para visualizar o projeto executado, basta abrir seu navegador e digitar o link "http://localhost:8080", que carregará o projeto.
 
-### Espero ter Ajudado :)
-
-
-
-
-
+Apenas abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto 🤯.
