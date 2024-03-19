@@ -77,6 +77,4 @@ Dessa forma, estaremos informando que usamos o banco bdpessoas e criando uma tab
 
 Após a configuração do banco de dados no MySql Workbench, basta abrir o projeto no Eclipse e executá-lo normalmente.
 
-Para visualizar o projeto executado, basta abrir seu navegador e digitar o link "http://localhost:8080", que carregará o projeto.
-
-Apenas abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto 🤯.
+Para visualizar o projeto executado, basta abrir seu navegador e digitar o link "http://localhost:8080", que carregará o projeto 🤯.
