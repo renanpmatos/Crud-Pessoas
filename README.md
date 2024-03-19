@@ -16,6 +16,11 @@
 
 Um desafio para criar uma aplicação CRUD em 1 fim de semana, usando Spring Boot pela primeira vez!
 
+Para o desenvolvimento do projeto foi utilizado um banco de dados MySql, que faria conexão com uma API desenvolvida em Java
+A API foi feita com o framework Spring Boot, que permite uma criação fácil e manipulação dinâmica dos dados na forma de API.
+
+Além disso, foram utilizados JQuery para o front-end, que contava com um design feito em Bootstrap, para facilitar e agilizar o processo de criação e desenvolvimento das interfaces.
+
 Para sua criação, utilizei principalmente a documentação do Spring Boot para desenvolver a API:
 
 [SpringBoot] <a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/">Documentação Spring Boot</a>
