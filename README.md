@@ -25,7 +25,7 @@ Para sua criação, utilizei principalmente a documentação do Spring Boot para
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Spring Boot
-- Html, CSS e Javascript vanilla
+- Html, CSS e Javascript Vanilla
 - Bootstrap
 
 ## <a name="quick-start">⚡ Execução do Projeto</a>
@@ -69,7 +69,7 @@ create table pessoas(
 );
 ```
 
-Dessa forma, estaremos informando que usamos o banco bdpessoas e criando uma tabela "pessoas" nele.
+Dessa forma, estaremos informando que usamos o banco **bdpessoas** e criando uma tabela **pessoas** nele.
 
 * Por padrão o MySql faz conexões em localhost:3306
 ##
